@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>
+		three.js WebRTC template
+	</title>
+
+	<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+
+	<link rel="stylesheet" href="styles.css">
+
+	<script src="js/libs/socket.io.min.js"></script>
+	<script src="js/libs/three.min.js"></script>
+	<script src="js/libs/firstPersonControls.js"></script>
+	<script src="js/libs/simplepeer.min.js"></script>
+
+	<script src="js/myControls.js"></script>
+	<script src="js/environment.js"></script>
+	<script src="js/scene.js"></script>
+	<script src="js/index.js"></script>
+
+	<style>
+		body {
+			overflow: hidden;
+		}
+
+		#info {
+			padding: 1em;
+			border: 1em;
+			color: rgb(223, 223, 223);
+		}
+	</style>
+</head>
+
+<body style="background: rgb(0, 0, 0); margin: 0; padding: 0">
+
+	<div id="canvas-container"></div>
+	<div id="HUD" style="color: rgb(255,255,255)">
+		<div id="instructions-container">
+			<h3>Shortcuts:</h3>
+			<ul>
+				<li>
+					H = Teleport Home
+				</li>
+
+				<li>
+					F = Teleport to Random Friend's location
+				</li>
+
+				<li>
+					Space Bar = Fire thrusters
+				</li>
+			</ul>
+		</div>
+		<div id="faces-container">
+			<h3>Current Astronauts:</h3>
+		</div>
+	</div>
+
+</body>
+
+</html>
